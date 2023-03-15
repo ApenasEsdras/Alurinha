@@ -1,0 +1,62 @@
+<P>
+    https://i.imgur.com/mThvRZq.png 
+    
+    Quando colocamos display: flex em um elemento, o navegador passa a considerar esse elemento como um flex container, ou seja, cria todo aquele comportamento que vimos anteriormente no curso, os filhos ficam um do lado do outro e podemos aplicar propriedades para espaçá-los.
+
+    Os filhos de um flex container por sua vez também ganham um nome, são chamados de flex items.
+    
+    Quando utilizamos flexbox temos que ficar atentos em quem colocamos as propriedades de espaçamento e distribuição do flex. Por exemplo, existem algumas propriedades que devem ser aplicadas à flex container e outras que devem ser aplicadas nos flex items.
+    
+    Para melhor ilustrar esses conceitos veja a seguinte imagem:
+    
+    flex model
+    
+    
+</P>
+
+<p>O melhor a se fazer aqui é ter em mente que o ideal é sempre que necessário consultar a documentação através desse site.
+
+    Lá podemos ver claramente quais propriedades são aplicadas ao container e aos flex items, não há necessidade de ficar decorando, isso virá naturalmente com a prática.
+    
+    Seguindo a documentação temos:
+    
+    container:
+    
+    display: flex
+    flex-direction
+    justify-content
+    flex-wrap
+    flex-flow
+    align-items
+    align-content
+    flex item:
+    
+    order
+    flex-grow
+    flex-shrink
+    flex-basis
+    flex
+    align-self</p>
+
+    <p>
+        A propriedade flex-grow vista no exercício anterior ajuda muito caso queiramos que um elemento ocupe toda a largura restante do flex container.
+
+Por exemplo, se temos:
+
+Elemento 1: 200 px.
+
+Elemento 2: 200 px.
+
+Espaço vazio que sobrou do flex container: 600 px.
+
+Total: 1000 px.
+
+Se colocamos flex-grow: 1 no primeiro elemento, ele passa a ter 800 px de largura, ou seja:
+
+Espaço vazio + Elemento 1: 800 px.
+
+E o segundo elemento continua tendo 200 px de largura.
+
+Agora, se colocarmos flex-grow: 1 nos dois elementos, o que aconteceria? Qual tamanho ficaria o elemento 1? E o elemento 2?
+    </p>
+<img src="https://i.imgur.com/mThvRZq.png"
